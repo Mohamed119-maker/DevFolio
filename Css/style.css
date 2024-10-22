@@ -1,0 +1,380 @@
+:root {
+    --main-color: #0078FF;
+    --paragraph-color: #4e4e4e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3 {
+    color: #1e1e1e;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.main-font {
+    font-family: var(--main-font);
+}
+
+.navbar {
+    background-color: #000000a9 !important;
+}
+
+.navbar .container ul li {
+    position: relative;
+}
+
+.navbar .container ul li a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.navbar .container ul li a:hover::before {
+    width: 50%;
+}
+
+.home {
+    height: 100vh;
+    background-image: linear-gradient(#00000082, #00000082), url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home .caption h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86px;
+}
+
+.home .caption p {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.about .container h5::before {
+    content: "";
+    position: absolute;
+    top: 9%;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.about .my-5 {
+    padding-block: 50px !important;
+}
+
+.about .container h5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.about .container .words {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#services {
+    margin-bottom: 10%;
+}
+
+
+#services .title p {
+    color: var(--paragraph-color);
+    line-height: 24px;
+}
+
+#services .title p::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 48.5%;
+    width: 45px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+#services .container h2 {
+    color: #1e1e1e;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+#services .container p {
+    color: var(--paragraph-color);
+    line-height: 24px;
+}
+
+#services .container .icon {
+    width: 100px;
+    height: 100px;
+    transition: all 0.6s;
+}
+
+#services .container .icon i {
+    transition: all 0.6s;
+}
+
+#services .container .hover:hover .icon {
+    background-color: var(--main-color);
+    border-color: #D5E9FF !important;
+}
+
+#services .container .hover:hover i {
+    color: white;
+}
+
+.border-info {
+    border-color: var(--main-color) !important;
+    border-width: 10px !important;
+}
+
+.counter {
+    padding-block: 8%;
+    background-image: linear-gradient(#0077ffae, #0077ffae), url(../img/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.counter .container p {
+    padding-top: 5px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.counter .container .border {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-width: 10px !important;
+    border-color: #D5E9FF !important;
+}
+
+#portfolio {
+    margin-bottom: 15%;
+}
+
+#portfolio .title p::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 48.5%;
+    width: 45px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+#portfolio .container .card .fs {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+#portfolio .container .card .fs span {
+    color: var(--main-color);
+}
+
+#portfolio .container .border {
+    width: 40px;
+    height: 40px;
+    color: var(--main-color);
+    border-color: var(--main-color) !important;
+    border-radius: 50%;
+    border-width: 3px !important;
+}
+
+#portfolio .container .card-text {
+
+    padding-block: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #1e1e1e;
+}
+
+#portfolio .container .card {
+    overflow: hidden;
+}
+
+#portfolio .container .card img {
+    transition: all 0.5s;
+}
+
+#portfolio .container .card:hover img {
+    transform: scale(1.1);
+}
+
+#work {
+    height: 80vh;
+    background-image: linear-gradient(#0077ffb5, #0077ffb5), url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#work .carousel-inner,
+.carousel-control-prev,
+.carousel-control-next {
+    padding-top: 200px;
+}
+
+#work .carousel-inner p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#blog .title p::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 48.5%;
+    width: 45px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+#blog .container .row h3 {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+
+#blog .container .row h3:hover {
+    color: var(--main-color);
+}
+
+#blog .container .row p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#blog .container .row .card-body button {
+
+    bottom: 90%;
+    left: 38%;
+}
+
+#blog .container .row .card ul li img {
+    width: 35px;
+}
+
+#blog .container .row .list-group-item .image span {
+    color: #1e1e1e;
+    transition: all 0.5s;
+}
+
+#blog .container .row .list-group-item .image span:hover {
+    color: var(--main-color);
+}
+
+#blog .container .row .list-group-item .clock i,
+span {
+    color: var(--paragraph-color);
+}
+
+#contact {
+    background-image: linear-gradient(#0077ffb5, #0077ffb5), url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact .container .row .title h5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #1e1e1e;
+}
+
+#contact .container .row .title h5::before {
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+#contact .container p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#contact .container button {
+    border: solid 5px;
+    transition: all 0.4s;
+}
+
+#contact .container button:hover {
+    border: solid 5px #D5E9FF;
+    background-color: #278cffce;
+}
+
+#contact .container ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+#contact .container ul li {
+    color: var(--paragraph-color);
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#contact .container ul li span {
+    color: var(--main-color);
+    padding-right: 2px;
+}
+
+#contact .container .icn {
+    width: 50px;
+    height: 50px;
+    border: solid 5px var(--main-color);
+    transition: all 0.6s;
+}
+
+#contact .container .icn i {
+    transition: all 0.6s;
+}
+
+#contact .container .icn:hover {
+    background-color: var(--main-color);
+    border-color: #D5E9FF !important;
+}
+
+#contact .container .icn:hover i {
+    color: white;
+}
+
+#footer {
+    height: 15vh;
+    background-color: #0053b3;
+}
